@@ -8,7 +8,7 @@ const Contact = require('./Contact');
 const app = express();
 connectDB();
 app.use(cors({
-  origin: "https://your-frontend.onrender.com",
+  origin: "https://managecontacts-qw5a.onrender.com",
 }));
 app.use(express.json());
 
