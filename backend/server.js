@@ -7,7 +7,9 @@ const Contact = require('./Contact');
 
 const app = express();
 connectDB();
-app.use(cors());
+app.use(cors({
+  origin: "https://your-frontend.onrender.com",
+}));
 app.use(express.json());
 
 //create Contact
